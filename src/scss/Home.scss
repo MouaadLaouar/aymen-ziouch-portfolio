@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+#Home {
+    position: relative;
+    padding: 60px 5% ;
+    text-align: center;
+    background-color: #2C2E3E;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+
+    .profil {
+        height: 20rem;
+        border: solid 4px;
+        border-color: #fff;
+        border-radius: 50%;
+    }
+
+    h1 {
+        margin: 25px 0px;
+        height: 30px;
+        text-align: center;
+        font-size: 50px;
+        overflow: visible;
+        font-family: 'Syne Mono', monospace;
+        color: #E1F4F3;
+    }
+
+    p {
+        color: #E3F6F5;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: unset;
+        border: solid 2px;
+        color: #fff;
+        border-radius: 8px;
+        border-color: #fff;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+
+    .social {
+        position: absolute;
+        bottom: 50px;
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
