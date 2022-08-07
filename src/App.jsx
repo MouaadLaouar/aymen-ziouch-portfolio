@@ -1,15 +1,11 @@
 import "./scss/App.scss"
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
 import NavBar from "./components/NavBar"
 import Home from "./pages/Home"
 import Animation from "./components/Animation";
 import Projects from "./pages/Projects";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -21,7 +17,7 @@ function App() {
       <Projects />
       <AboutMe />
       <Contact />
-
+      <Footer />
 
     </div>
   )
