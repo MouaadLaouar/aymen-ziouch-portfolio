@@ -1,0 +1,22 @@
+@import "./Variable";
+
+
+#Contact {
+    padding: 20px 5%;
+    text-align: center;
+    background-color: $primaryColor_D;
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: $textColor_D;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 700;
+        color: $textColor_D;
+        margin-top: 10px;
+    }
+}
+

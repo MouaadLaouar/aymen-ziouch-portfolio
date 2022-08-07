@@ -1,28 +1,51 @@
+@import "./Variable";
+
 header {
     height: 60px;
     width: 100%;
-    background-color: #2C2E3E;
+    background-color: $SecondayColor_D;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    padding: 10px 40px;
     position: static;
 
     .menu-button {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s ease-in-out;
+
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: $MenuColor_D;
+        }
+    }
+
+    .mode {
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: $DarkMode_D;
+        transition: all 0.3s ease-in-out;
         cursor: pointer;
     }
 
 
     .menu-list,
     .active {
-        background-color: #34374C;
+        background-color: $NavBarColor_D;
         position: absolute;
         left: 0;
         top: 60px;
         height: 50vh;
-        width: 100%;
+        width: 85%;
         z-index: 1000;
-        border-radius: 0px 0px 30px 0px;
+        border-radius: 0px 0px 50px 0px;
         transition: all 0.5s ease-in-out;
 
 

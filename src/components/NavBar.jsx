@@ -1,34 +1,44 @@
 import "../scss/NavBar.scss"
-import logo from "../assets/code-white.png"
-import menuBtn from "../assets/menu.png"
-import close from "../assets/close.png"
-import { useState } from "react"
+import { useState } from "react";
+
+//icons
+import Menu from "../components/icons/Menu";
+import Close from "../components/icons/Close";
+import Sun from "../components/icons/Sun";
+
 
 
 const NavBar = () => {
 
-    const [menu, setmneu] = useState('menu-list')
-    const [update, setupdate] = useState(menuBtn)
+    const [menu, setmenu] = useState(true)
+    const [mode, setmode] = useState(true)
+    const [menulist, setmenulist] = useState("menu-list")
 
     return (
         <header>
-            <div className="menu-button" onClick={ () => {
-                if(menu === "menu-list") {
-                    setmneu("active")
-                    setupdate(close)
+            <div className="menu-button" onClick={() => {
+                if(menu === true) {
+                    setmenu(false);
+                    setmenulist("active")
                 } else {
-                    setmneu("menu-list")
-                    setupdate(menuBtn)
+                    setmenu(true)
+                    setmenulist("menu-list")
                 }
             }}>
-                <img src={ update } alt="menu-button" />
-            </div>
-            
-            <div className="logo">
-                <img src={ logo } alt="logo" />
+                {menu === true ? <Menu /> : <Close /> }
             </div>
 
-            <div className={ menu }>
+            <div className="mode" onClick={() => {
+                if(mode === true) {
+                    setmode(false)
+                } else {
+                    setmode(true)
+                }
+            }}>
+                {mode ? <Sun /> : <h1>??</h1>}
+            </div>
+
+            <div className={ menulist }>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">PROJECT</a></li>

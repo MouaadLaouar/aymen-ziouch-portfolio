@@ -1,7 +1,10 @@
+@import './Variable';
+
 .anime {
     height: calc(100vh);
     width: 100%;
-    background-color: rgb(48, 48, 48);
+    // background-color: rgb(48, 48, 48);
+    background-color: $primaryColor_D;
     display: flex;
     justify-content: center;
     align-items: center;
