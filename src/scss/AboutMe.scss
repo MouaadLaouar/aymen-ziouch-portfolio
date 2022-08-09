@@ -137,3 +137,24 @@
         }
     }
 }
+
+@media only screen and (min-width: 900px) {
+
+    #AboutMe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        :nth-child(n) {
+            max-width: 900px;
+        }
+
+        nav:nth-child(4) {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+}
+

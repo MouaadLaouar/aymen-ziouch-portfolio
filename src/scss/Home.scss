@@ -76,3 +76,22 @@
         }
     }
 }
+
+@media only screen and (min-width: 900px) {
+
+
+    #Home {
+
+        position: relative;
+        height: 70vh;
+
+        .social {
+            position: absolute;
+            left: 0;
+            top: 40%;
+            bottom: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -12,6 +12,7 @@ const Projects = () => {
         <section id="Projects">
             <h1>PROJECTS</h1>
 
+            <nav>
             <div className="projectCard">
                 <div className="Content">
                     <h1>Solar-System</h1>
@@ -45,6 +46,9 @@ const Projects = () => {
                 <div className="projectImg">
                 </div>
             </div>
+
+            </nav>
+
         </section>
     )
 }

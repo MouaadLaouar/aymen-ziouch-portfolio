@@ -76,3 +76,38 @@ header {
         transform: translateX(0%);
     }
 }
+
+
+@media only screen and (min-width: 900px) {
+
+
+    header {
+
+        justify-content: space-around;
+        
+
+        .menu-button {
+            display: none;
+        }
+
+        .menu-list {
+            position: static;
+            height: 60px;
+            width: 300px;
+            border-radius: unset;
+            background-color: unset;
+            left: unset;
+            right: 0;
+            z-index: 0;
+            transform: translateX(0%);
+
+            ul {
+                flex-direction: row;
+
+                li > a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

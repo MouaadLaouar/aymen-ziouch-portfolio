@@ -17,11 +17,13 @@ const Home = () => {
     return (
         <section id="Home">
             <img className="profil" src={ image } alt="aymen-image" />
+            
             <div className="bio">
                 <h1>AYMEN ZIOUCHE</h1>
                 <p>FLUTTER DEVELOPER | FONTEND DEVELOPER</p>
             </div>
             <button>MY RESUM <img src={ arrow } alt="arrow-down" /></button>
+            
             <div className="social">
                 <a href="https://www.instagram.com/aymen_zch/"><Insta /></a>
                 <a href="https://github.com/aymen-ziouche"><Git /></a>
